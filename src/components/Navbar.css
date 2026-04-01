@@ -1,0 +1,28 @@
+.navbar-transparent {
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.navbar-toggler-icon {
+  filter: invert(1); /* makes icon white */
+}
+
+.socialLinks svg {
+  font-size: 22px;
+}
+
+.socialLinks svg:hover {
+ background: #1b3a1b;
+  color: white;
+}
+.navbar-solid {
+  position: relative !important;
+  background: #1b3a1b !important;
+  z-index: 999;
+}
+

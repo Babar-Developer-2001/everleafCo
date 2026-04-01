@@ -1,0 +1,24 @@
+.middle-img2{
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),  url(/src/assets/images/footerBanner-img.webp);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.btnn{
+    background-color: #698927;
+    color: white;
+}
+.btnn:hover{
+    background-color: #96a872;
+}
+.footer{
+        background-color: #ECF4D3;
+
+}
+.navbarFooter{
+            background-color: #ECF4D3;
+color: black;
+}
+.footerName{
+    color: #698927;
+    font-weight: 800;
+}

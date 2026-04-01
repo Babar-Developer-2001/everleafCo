@@ -1,0 +1,22 @@
+.contact {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(/src/assets/images/contact-bg.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.contactPara {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.contactIcon{
+  background-color: #ecf4d3;
+}
+.socialLinks a{
+    font-size: 30px;
+    color: black;
+
+}

@@ -1,0 +1,14 @@
+.shop {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(/src/assets/images/shop-bg.webp);
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.shop h3 {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
