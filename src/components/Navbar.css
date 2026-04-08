@@ -8,21 +8,84 @@
   border: none !important;
   box-shadow: none !important;
 }
+.Logo:hover{
+  color: #ecf4d3 !important;
+
+}
 .navbar-toggler-icon {
   filter: invert(1); /* makes icon white */
 }
 
+/* Default link */
+.navbar .nav-link {
+  color: white !important;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.navbar .nav-link:hover {
+  color: #ecf4d3 !important;
+  border-bottom: 2px solid #ecf4d3;
+}
+
+/* Active */
+.navbar .active-link {
+  color: #ecf4d3 !important;
+  font-weight: 700;
+  border-bottom: 2px solid #ecf4d3;
+}
+.socialLinks .nav-link{
+  border-bottom: none !important;
+}
+
 .socialLinks svg {
   font-size: 22px;
+  transition: all 0.2s ease;
 }
 
 .socialLinks svg:hover {
- background: #1b3a1b;
-  color: white;
+  color: #ecf4d3 !important;
+  transform: scale(1.3);
 }
+
+
+/* NAVBAR ON OTHER PAGES */
 .navbar-solid {
   position: relative !important;
   background: #1b3a1b !important;
   z-index: 999;
 }
+
+
+
+/* NAVBAR OFFCANVAS IN SMALL DEVICES */
+.offcanvas{
+  background-color: #1b3a1b;
+}
+
+.offcanvas .nav-link{
+color: white;
+}
+.offcanvas .nav-link:hover{
+      color: #ecf4d3 !important;
+
+}
+.offcanvas .socialLinks svg {
+  color: white;
+  font-size: 22px;
+  transition: all 0.2s ease;
+}
+
+.offcanvas .socialLinks svg:hover {
+  color: #ecf4d3 !important;
+  transform: scale(1.3);
+}
+.offcanvas .btn-close {
+  filter: invert(1);
+}
+
+
+
 

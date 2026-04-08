@@ -1,13 +1,24 @@
+/* ✅ Must be tall enough to allow scroll */
+.mainHeroSection {
+  height: 150vh;
+  position: relative;
+  overflow: hidden; /* Hides overflow during zoom so image doesn't spill */
+}
+
+/* ✅ heroWrapper fills screen, zoom happens here */
 .heroWrapper {
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
               url('/src/assets/images/hero.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;  /* ← full screen height */
-
+  min-height: 100vh;
+  position: sticky;   /* 🔑 sticky keeps it pinned while scroll happens */
+  top: 0;
+  will-change: transform, filter; /* 🔑 GPU optimization for smooth animation */
 }
 
+/* ✅ Text centered vertically & horizontally */
 .heroSection {
   display: flex;
   justify-content: center;
@@ -42,24 +53,12 @@
   background-color: #4da34d;
 }
 
-.box span{
-  
-   background-color: #ECF4D3;
-   
+.box span {
+  background-color: #ECF4D3;
 }
 
 @media (max-width: 576px) {
-  .heroSection h1 {
-    font-size: 1.6rem;
-  }
-
-  .heroSection p {
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-  }
-
-  .heroSection button {
-    padding: 10px 24px;
-    font-size: 0.9rem;
-  }
+  .heroSection h1 { font-size: 1.6rem; }
+  .heroSection p { font-size: 0.75rem; letter-spacing: 2px; }
+  .heroSection button { padding: 10px 24px; font-size: 0.9rem; }
 }

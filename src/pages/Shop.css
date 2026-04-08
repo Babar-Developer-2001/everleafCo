@@ -12,3 +12,8 @@
   font-size: 4.5rem;
   font-weight: 600;
 }
+.banner-img{
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),  url(/src/assets/images/banner-img1.webp);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}

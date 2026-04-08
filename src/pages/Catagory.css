@@ -4,3 +4,7 @@
 .PlantSold img{
     height: 450px;
 }
+.gradient-border {
+  background: linear-gradient(45deg, #00ffcc, #0099ff, #ff00cc);
+  display: inline-block;
+}

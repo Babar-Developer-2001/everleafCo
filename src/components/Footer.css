@@ -1,24 +1,32 @@
-.middle-img2{
-    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),  url(/src/assets/images/footerBanner-img.webp);
-    padding-top: 80px;
-    padding-bottom: 80px;
+.footerBanner-img {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(/src/assets/images/footerBanner-img.webp);
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-.btnn{
-    background-color: #698927;
-    color: white;
+.btnn {
+  padding: 12px 35px;
+  background-color: #6abf6a;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
 }
-.btnn:hover{
-    background-color: #96a872;
+.btnn:hover {
+  background-color: #4da34d;
 }
-.footer{
-        background-color: #ECF4D3;
+.footer {
+  background-color: #ecf4d3;
+}
+.navbarFooter {
+  background-color: #ecf4d3;
+  color: black;
+}
 
-}
-.navbarFooter{
-            background-color: #ECF4D3;
-color: black;
-}
-.footerName{
-    color: #698927;
-    font-weight: 800;
+.footerName {
+  color: #698927;
+  font-weight: 800;
 }

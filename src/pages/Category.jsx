@@ -1,5 +1,13 @@
 import React from "react";
 import "./Catagory.css";
+import { motion } from "framer-motion";
+import {
+  parentVariant,
+  childVariants,
+  hoverEffects,
+  tapEffects,
+  hoverImgEffects,
+} from "../animations/cardsAnimations";
 
 function Category() {
   return (
@@ -7,54 +15,96 @@ function Category() {
       <section>
         <div className="container">
           <div className="row mt-5">
-          <div className="col-12 text-center my-5">
-            <h2>Our Categories</h2>
+            <div className="col-12 text-center my-5">
+              <h2>Our Categories</h2>
+            </div>
           </div>
-        </div>
         </div>
 
         <div className="container-fluid mb-5">
           <div className="container">
-            <div className="row g-4">
-              <div className="col-lg-3 col-md-6 col-12">
-                <img
+            <motion.div
+              className="row g-4"
+              variants={parentVariant}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+            >
+              <motion.div
+                className="col-lg-3 col-md-6 col-12"
+                variants={childVariants}
+                whileHover={hoverEffects}
+                whileTap={tapEffects}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <motion.img
                   src="./src/assets/images/house-plant.webp"
-                  className="img-fluid w-100 rounded-4 shadow-sm"
+                  className="img-fluid w-100 rounded-4"
                   alt="house-plant"
+                  whileHover={hoverImgEffects}
                 />
-                <p className="fs-5 fw-semibold text-center mt-3">House Plants</p>
-              </div>
-              <div className="col-lg-3 col-md-6 col-12">
+                <p className="fs-5 fw-semibold text-center mt-3">
+                  House Plants
+                </p>
+              </motion.div>
+              <motion.div
+                className="col-lg-3 col-md-6 col-12"
+                variants={childVariants}
+                whileHover={hoverEffects}
+                whileTap={tapEffects}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
                 <div>
-                  <img
-                  src="./src/assets/images/outdoor-plant.webp"
-                  className="img-fluid w-100 rounded-4 shadow-sm"
-                  alt="outdoor-plant"
-                />
-                <p className="fs-5 fw-semibold text-center mt-3">Outdoor Plants</p>
+                  <motion.img
+                    src="./src/assets/images/outdoor-plant.webp"
+                    className="img-fluid w-100 rounded-4"
+                    alt="outdoor-plant"
+                    whileHover={hoverImgEffects}
+                  />
+                  <p className="fs-5 fw-semibold text-center mt-3">
+                    Outdoor Plants
+                  </p>
                 </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-12">
-               <div>
-                 <img
-                  src="./src/assets/images/succulents.webp"
-                  className="img-fluid w-100 rounded-4 shadow-sm"
-                  alt="succulents"
-                />
-                <p className="fs-5 fw-semibold text-center mt-3">Succulents</p>
-               </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-12">
+              </motion.div>
+              <motion.div
+                className="col-lg-3 col-md-6 col-12"
+                variants={childVariants}
+                whileHover={hoverEffects}
+                whileTap={tapEffects}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
                 <div>
-                  <img
-                  src="./src/assets/images/dessert-bloom.webp"
-                  className="img-fluid w-100 rounded-4 shadow-sm"
-                  alt="desert-bloom"
-                />
-                <p className="fs-5 fw-semibold text-center mt-3">Desert Bloom</p>
+                  <motion.img
+                    src="./src/assets/images/succulents.webp"
+                    className="img-fluid w-100 rounded-4"
+                    alt="succulents"
+                    whileHover={hoverImgEffects}
+                  />
+                  <p className="fs-5 fw-semibold text-center mt-3">
+                    Succulents
+                  </p>
                 </div>
-              </div>
-            </div>
+              </motion.div>
+              <motion.div
+                className="col-lg-3 col-md-6 col-12"
+                variants={childVariants}
+                whileHover={hoverEffects}
+                whileTap={tapEffects}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <div>
+                  <motion.img
+                    src="./src/assets/images/dessert-bloom.webp"
+                    className="img-fluid w-100 rounded-4"
+                    alt="desert-bloom"
+                    whileHover={hoverImgEffects}
+                  />
+                  <p className="fs-5 fw-semibold text-center mt-3">
+                    Desert Bloom
+                  </p>
+                </div>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -64,16 +114,17 @@ function Category() {
           <div className="container">
             <div className="row align-items-center gy-4">
               <div className="col-md-6 col-12">
-                <img
+                <motion.img
                   src="./src/assets/images/stats count.webp"
-                  className="img-fluid w-100 object-fit-cover rounded-4 shadow-sm"
+                  className="img-fluid w-100 object-fit-cover rounded-4 "
                   alt="Plants Sold"
+                  whileHover={hoverImgEffects}
+                  whileTap={tapEffects}
+                  transition={{ type: "spring", stiffness: 300 }}
                 />
               </div>
               <div className="col-md-6 col-12 ps-md-4">
-                <h1>
-                  Your Premier Destination for All Green.
-                </h1>
+                <h1>Your Premier Destination for All Green.</h1>
                 <p className="my-4 text-muted">
                   At Urban Jungle Co., we believe in the transformative power of
                   plants. Whether you’re a seasoned gardener or just starting

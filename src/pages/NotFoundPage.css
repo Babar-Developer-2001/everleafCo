@@ -1,0 +1,14 @@
+.btnn{
+  padding: 12px 35px;
+  background-color: #6abf6a;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btnn:hover{
+  background-color: #4da34d;
+}
