@@ -2,7 +2,7 @@ import React from "react";
 import "./Catagory.css";
 import housePlant from '../assets/images/house-plant.webp'
 import outdoorPlant from '../assets/images/outdoor-plant.webp'
-import Succulents from '../assets/images/Succulents.webp'
+import succulents from '../assets/images/succulents.webp'
 import dessertBloom from '../assets/images/dessert-bloom.webp'
 import statsCount from '../assets/images/stats count.webp'
 
@@ -82,7 +82,7 @@ function Category() {
               >
                 <div>
                   <motion.img
-                    src={Succulents}
+                    src={succulents}
                     className="img-fluid w-100 rounded-4"
                     alt="succulents"
                     whileHover={hoverImgEffects}
