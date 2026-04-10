@@ -1,5 +1,9 @@
 import React from "react";
 import "./Products.css";
+import ZenBamboo from '../assets/images/ZenBamboo.webp'
+import Succulent from '../assets/images/Succulent.webp'
+import silverMist from '../assets/images/silverMist.webp'
+
 import { motion } from "framer-motion";
 import {
   parentVariant,
@@ -37,7 +41,7 @@ function Products() {
               transition={{ type: "spring", stiffness: 320 }}
             >
               <motion.img
-                src="./src/assets/images/ZenBamboo.webp"
+                src={ZenBamboo}
                 className="img-fluid w-100 rounded-4"
                 alt="ZenBamboo"
                 whileHover={hoverImgEffects}
@@ -55,7 +59,7 @@ function Products() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <motion.img
-                src="./src/assets/images/Succulent.webp"
+                src={Succulent}
                 className="img-fluid w-100 rounded-4"
                 alt="Succulent"
                 whileHover={hoverImgEffects}
@@ -73,7 +77,7 @@ function Products() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <motion.img
-                src="./src/assets/images/silverMist.webp"
+                src={silverMist}
                 className="img-fluid w-100 rounded-4"
                 alt="silverMist"
                 whileHover={hoverImgEffects}
@@ -86,7 +90,7 @@ function Products() {
         </div>
       </div>
 
-      <div className="container-fluid  middle-img">
+      <div className="container-fluid  banner-img">
         <div className="row ">
           <div className="col-12 text-center text-light">
             <h1>

@@ -1,5 +1,8 @@
 import React from "react";
 import "./About.css";
+import ourMission from '../assets/images/our-mission.webp'
+import statsCount from '../assets/images/stats count.webp'
+
 import PopularProducts from "./PopularProducts";
 import { FaBox } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
@@ -42,7 +45,7 @@ function About() {
               <div className="row align-items-center gy-4">
                 <div className="col-md-6 col-12">
                   <motion.img
-                    src="./src/assets/images/stats count.webp"
+                    src={statsCount}
                     className="img-fluid aboutSectionBottom w-100 object-fit-cover rounded-4"
                     alt="stats count"
                     whileHover={hoverImgEffects}
@@ -235,7 +238,7 @@ function About() {
                 </div>
                 <div className="col-md-6 col-12">
                   <motion.img
-                    src="./src/assets/images/our-mission.webp"
+                    src={ourMission}
                     className="img-fluid w-100 object-fit-cover rounded-4"
                     alt="our-mission"
                     whileHover={hoverImgEffects}

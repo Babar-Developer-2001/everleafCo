@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import "./Shop.css";
+import ZenBamboo from '../assets/images/ZenBamboo.webp'
+import Succulent from '../assets/images/Succulent.webp'
+import silverMist from '../assets/images/silverMist.webp'
+import DesertBloom2 from '../assets/images/DesertBloom2.webp'
+import GoldenGlow from '../assets/images/GoldenGlow.webp'
 import Category from "./Category";
 import { easeInOut, motion } from "framer-motion";
 import {
@@ -18,42 +23,42 @@ const products = [
     name: "Desert Bloom",
     category: "Indoor Plants",
     price: 70,
-    img: "./src/assets/images/DesertBloom2.webp",
+    img: DesertBloom2,
   },
   {
     id: 2,
     name: "Golden Glow",
     category: "Indoor Plants",
     price: 85,
-    img: "./src/assets/images/GoldenGlow.webp",
+    img: GoldenGlow,
   },
   {
     id: 3,
     name: "Silver Mist",
     category: "Indoor Plants",
     price: 92,
-    img: "./src/assets/images/SilverMist.webp",
+    img: silverMist,
   },
   {
     id: 4,
     name: "Zen Bamboo Grove",
     category: "Indoor Plants",
     price: 90,
-    img: "./src/assets/images/ZenBamboo.webp",
+    img: ZenBamboo,
   },
   {
     id: 5,
     name: "Starlight Succulent",
     category: "Indoor Plants",
     price: 95,
-    img: "./src/assets/images/Succulent.webp",
+    img: Succulent,
   },
   {
     id: 6,
     name: "Silver Mist",
     category: "Indoor Plants",
     price: 92,
-    img: "./src/assets/images/silverMist.webp",
+    img: silverMist,
   },
 ];
 

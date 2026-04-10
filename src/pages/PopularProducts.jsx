@@ -1,5 +1,13 @@
 import React from "react";
 import "./PopularProducts.css";
+import DesertBloom2 from '../assets/images/DesertBloom2.webp'
+import GoldenGlow from '../assets/images/GoldenGlow.webp'
+import silverMist from '../assets/images/silverMist.webp'
+
+import client1 from '../assets/images/client1.jpg'
+import client2 from '../assets/images/client2.jpg'
+import client3 from '../assets/images/client3.jpg'
+
 import { motion } from "framer-motion";
 import {
   parentVariant,
@@ -36,7 +44,7 @@ function PopularProducts() {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <motion.img
-                  src="./src/assets/images/DesertBloom2.webp"
+                  src={DesertBloom2}
                   className="img-fluid w-100 rounded-4"
                   alt="DesertBloom2"
                   whileHover={hoverImgEffects}
@@ -54,7 +62,7 @@ function PopularProducts() {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <motion.img
-                  src="./src/assets/images/GoldenGlow.webp"
+                  src={GoldenGlow}
                   className="img-fluid w-100 rounded-4"
                   alt="GoldenGlow"
                   whileHover={hoverImgEffects}
@@ -72,7 +80,7 @@ function PopularProducts() {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <motion.img
-                  src="./src/assets/images/SilverMist.webp"
+                  src={silverMist}
                   className="img-fluid w-100 rounded-4"
                   alt="SilverMist"
                   whileHover={hoverImgEffects}
@@ -120,7 +128,7 @@ function PopularProducts() {
                   </p>
                   <div className="d-flex align-items-center mt-5">
                     <img
-                      src="./src/assets/images/client1.jpg"
+                      src={client1}
                       alt="Jeffrey Epstein"
                       className="rounded-circle me-3"
                     />
@@ -142,7 +150,7 @@ function PopularProducts() {
                   </p>
                   <div className="d-flex align-items-center mt-5">
                     <img
-                      src="./src/assets/images/client2.jpg"
+                      src={client2}
                       alt="Donald Trump"
                       className="rounded-circle me-3"
                     />
@@ -162,7 +170,7 @@ function PopularProducts() {
                   </p>
                   <div className="d-flex align-items-center mt-5">
                     <img
-                      src="./src/assets/images/client3.jpg"
+                      src={client3}
                       alt="Diana Ross"
                       className="rounded-circle me-3"
                     />

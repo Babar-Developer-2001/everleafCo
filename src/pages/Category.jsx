@@ -1,5 +1,12 @@
 import React from "react";
 import "./Catagory.css";
+import housePlant from '../assets/images/house-plant.webp'
+import outdoorPlant from '../assets/images/outdoor-plant.webp'
+import Succulents from '../assets/images/Succulents.webp'
+import dessertBloom from '../assets/images/dessert-bloom.webp'
+import statsCount from '../assets/images/stats count.webp'
+
+
 import { motion } from "framer-motion";
 import {
   parentVariant,
@@ -38,7 +45,7 @@ function Category() {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <motion.img
-                  src="./src/assets/images/house-plant.webp"
+                  src={housePlant}
                   className="img-fluid w-100 rounded-4"
                   alt="house-plant"
                   whileHover={hoverImgEffects}
@@ -56,7 +63,7 @@ function Category() {
               >
                 <div>
                   <motion.img
-                    src="./src/assets/images/outdoor-plant.webp"
+                    src={outdoorPlant}
                     className="img-fluid w-100 rounded-4"
                     alt="outdoor-plant"
                     whileHover={hoverImgEffects}
@@ -75,7 +82,7 @@ function Category() {
               >
                 <div>
                   <motion.img
-                    src="./src/assets/images/succulents.webp"
+                    src={Succulents}
                     className="img-fluid w-100 rounded-4"
                     alt="succulents"
                     whileHover={hoverImgEffects}
@@ -94,7 +101,7 @@ function Category() {
               >
                 <div>
                   <motion.img
-                    src="./src/assets/images/dessert-bloom.webp"
+                    src={dessertBloom}
                     className="img-fluid w-100 rounded-4"
                     alt="desert-bloom"
                     whileHover={hoverImgEffects}
@@ -115,7 +122,7 @@ function Category() {
             <div className="row align-items-center gy-4">
               <div className="col-md-6 col-12">
                 <motion.img
-                  src="./src/assets/images/stats count.webp"
+                  src={statsCount}
                   className="img-fluid w-100 object-fit-cover rounded-4 "
                   alt="Plants Sold"
                   whileHover={hoverImgEffects}
